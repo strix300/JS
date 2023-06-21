@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.tableheader {
+    border: 1px solid black;
+}
+
+th { 
+    border: 1px solid black;
+}
+
+td { 
+    border: 1px solid black;
+}
+
+tr:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.first { 
+    background-color: coral;
+}
+
+body { 
+    position: relative;
+    top: 200px;
+    left: 450px;
+    border: 1px solid black;
+}

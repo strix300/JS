@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class = "main">
+        <div class = "search">
+            <input class = "inputsearch" type = 'text' placeholder="Input City">
+            <button class = "button">
+                <img src="pictures/lupa.png" alt="." class = 'lupa-img'>
+            </button>
+        </div>
+        <div class = "maininfo">
+            <div class = "weatherinfo">
+            <div class = info>
+                <div class = "infoNow">
+                    <div class = "infoNow-temp"></div>
+                    <button class = "favouritecity">
+                        <img class = "heart" src="pictures/heart1.jpg" alt="like">
+                    </button>
+                </div>
+                <div class = "infoDetails">
+                    <div class = "infoDetails-information">
+                        <div class = "infoDetails-textstyle" id = "infoDetails-temp"></div>
+                        <div class = "infoDetails-textstyle" id = "infoDetails-feelslike"></div>
+                        <div class = "infoDetails-textstyle" id = "infoDetails-weather"></div>
+                        <div class = "infoDetails-textstyle" id = "infoDetails-sunrise"></div>
+                        <div class = "infoDetails-textstyle" id = "infoDetails-sunset"></div>
+                    </div>
+                </div>
+                <div class = "infoForecast">
+                </div>
+                <div class = "invise"></div>
+            </div>
+            <div class = "menu">
+                <button class = "Now">
+                    Now
+                </button>
+                <button class = "Details">
+                    Details
+                </button>
+                <button class = "Forecast">
+                    Forecast
+                </button>
+            </div>
+            </div>
+            <div class = "added-locations">
+                <div class = "add-header">
+                    Added Locations:
+                </div>
+                <div class = "favourite-cities">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js" type="module"></script>
+</html>
