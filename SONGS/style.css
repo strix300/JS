@@ -1,0 +1,64 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    width: 1100px;
+}
+
+.popular{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.popular2{
+    font-size: 18px;
+}
+
+.main {
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+.main__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid transparent;
+    height: 320px;
+    width: 250px;
+}
+
+.name {
+    position: relative;
+    left: 5px;
+    height: 50px;
+    width: 250px;
+}
+
+.picture {
+    height: 240px;
+    width: 240px;
+}
+
+.main__block:hover {
+    border: 1px solid coral;
+}
+
+.songname:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.artist:hover {
+    cursor: pointer;
+    color: red;
+} 
+
+.header:hover {
+    cursor: pointer;
+    color: red;
+}

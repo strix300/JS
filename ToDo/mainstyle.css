@@ -1,0 +1,99 @@
+body {
+    background-color: whitesmoke;
+}
+
+.main {
+    display: flex;
+    height: 400px;
+    width: 235px;
+    position: relative;
+    left: 800px;
+    top: 300px;
+    display: inline-block;
+    background-color: white;
+}
+
+h3{
+    position: relative;
+    left:85px;
+    top:-20px;
+}
+
+.addtask {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 225px;
+    position: relative;
+    top: -40px;
+    left: 5px;
+}
+
+.newtodohighpriority {
+    padding-right: 30px; 
+    border: solid transparent;
+}
+  
+.button {
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    width: 20px; 
+    height: 20px; 
+    background-color: transparent; 
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.task {
+    display: flex;
+    position: relative;
+    left: 5px;
+    top: -30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 225px;
+    margin-bottom: 5px;
+    background-color: white;
+  }
+  
+  .round-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+.round-checkbox:checked ~ .task {
+    background-color: gray;
+}
+
+.round-checkbox:checked {
+    background-color: skyblue;
+}
+
+.close-button { 
+    background-color: transparent; 
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 11px;
+    width: 24px;
+    height: 24px;
+    order: 2;
+    position:relative;
+    top: -4px;
+}
+
+.tasktext { 
+    flex: 1;
+    margin-right: 10px;
+}

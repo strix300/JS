@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id = "body123">
+    <button id="change-bg" data-color="#e30505">Изменить фон</button>
+    <script>
+        let colorbutton = document.getElementById("change-bg")
+        let body = document.getElementById("body123")
+        const colors = ['red', 'blue', 'green', 'orange'];
+        let intervalId = null;
+
+        function startOrStop() {
+            if (intervalId === null) {
+                intervalId = setInterval(changeColor, 2000);
+            } else {
+                clearInterval(intervalId);
+                intervalId = null;
+            }
+        }
+
+        function changeColor(){
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            body.style.backgroundColor=randomColor;
+        }
+        colorbutton.addEventListener('click', startOrStop)
+    </script>
+</body>
+</html>

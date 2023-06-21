@@ -1,0 +1,348 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("pictures/sacura4k.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    border: 3px solid black;
+    width: 600px;
+    height: 435px;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: rgb(238, 207, 212);
+    border-radius: 8px;
+}
+
+.search {
+    border: 0.1px solid black;
+    width: 100%;
+    height: 47px;
+    border-left: none;
+    border-right: none;
+}
+
+.inputsearch {
+    border: none;
+    outline: none;
+    width: 550px;
+    height: 44px;
+    background-color: transparent;
+    font-size: 22px;
+    font-family: Arial;
+}
+
+.inputsearch::placeholder {
+    color: rgb(68, 68, 68); 
+    font-family: Arial;
+}
+    
+.button {
+    background-color: transparent;
+    width: 40px;
+    height: 46px;
+    border: none;
+}
+
+.lupa-img {
+    position: relative;
+    top: 2px;
+    width: 23px;
+    height: 23px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.maininfo {
+    display: flex;
+    width: 100%;
+    height: 386px;
+    justify-content: flex-end;
+}
+
+.weatherinfo {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.info { 
+    display: flex;
+    width: 100%;
+    height: 87%;
+}
+
+.infoNow {
+    width: 100%;
+    height: 339px;
+    z-index: 4;
+    background-color: rgb(238, 207, 212);
+}
+
+.infoDetails {
+    position:absolute;
+    width: 300px;
+    height: 339px;
+    z-index: 3;    
+    background-color: rgb(238, 207, 212);
+}
+
+.infoForecast {
+    display: flex;
+    position:absolute;
+    width: 300px;
+    height: 339px;
+    z-index: 2;
+    background-color: rgb(238, 207, 212);
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+.infoForecast::-webkit-scrollbar {
+    background-color:  rgb(235, 187, 195); /* Цвет дорожки */
+    border-radius: 4px; /* Закругление углов дорожки */
+}
+
+.infoForecast::-webkit-scrollbar-thumb {
+    background-color: #ffa8b6; 
+    border-radius: 4px; 
+}
+
+.forecastStatus {
+    display: flex;
+    position:relative;
+    left: 8px;
+    top: 15px;
+    border: 1px solid black;
+    border-radius: 4px; 
+    width: 265px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.ForecastDate {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 120px;
+    height: 21px;
+    font-family: Arial;
+}
+
+.ForecastTime {
+    position: relative;
+    left: 215px;
+    top:3px;
+    width: 45px;
+    height: 21px;
+    font-family: Arial;
+}
+
+.ForecastTemperature {
+    position: relative;
+    top: 23px;
+    left: -38px;
+    top: 35px;
+    width: 160px;
+    height: 40px;
+    font-family: Arial;
+}
+
+.ForecastCloudsStatus {
+    position: relative;
+    top: 30px;
+    left: -7px;
+    width: 95px;
+    height: 47px;
+    font-size: 12px;
+    text-align: right;
+    font-family: Arial;
+}
+
+.ForecastCloudsImg {
+    width: 31px;
+    height: 31px;
+}
+
+.invise {
+    position:absolute;
+    width: 300px;
+    height: 78,2%;
+    z-index: 1;    
+    background-color: red;
+}
+
+.menu {
+    position: relative;
+    top: 2px;
+    display: flex;
+    width: 100%;
+    height: 12%;
+    justify-content: center;
+}
+
+.Now {
+    border: 0.1px solid black;
+    width: 33.3%;
+    height: 100%;
+    align-items: center;
+    font-size: 18px;
+    background-color: #ffa8b6;
+    font-family: Arial;
+}
+
+.Now:hover {
+    background-color: rgb(250, 168, 182);
+    cursor: pointer;
+}
+
+.Details {
+    border: 0.1px solid black;
+    width: 33.3%;
+    height: 100%;
+    align-items: center; 
+    font-size: 18px; 
+    background-color: transparent;
+    font-family: Arial;
+}
+
+.Details:hover {
+    background-color: rgb(250, 168, 182);
+    cursor: pointer;
+}
+
+.Forecast {
+    border: 0.1px solid black;
+    width: 33.3%;
+    height: 100%;
+    align-items: center;
+    font-size: 18px;
+    background-color: transparent;
+    font-family: Arial;
+}
+
+.Forecast:hover {
+    background-color: rgb(250, 168, 182);
+    cursor: pointer;
+}
+
+.added-locations {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.add-header {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 15%;
+    border: 0.1px solid black;
+    font-size: 24px;
+    font-family: Arial;
+    border-top: none;
+    border-bottom: none;
+    padding-left: 15px;
+}
+
+.favourite-cities {
+    width: 100%;
+    height: 84%;
+    border: 0.1px solid black;
+    border-bottom: none;
+}
+
+.infoNow-icon{
+    width: 150px;
+    height: 120px;
+    position: relative;
+    top: 40px;
+    left: 68px;
+}
+
+.infoNow-temp {
+    font-size: 60px;
+    font-family: Arial;
+    background-color: transparent;
+}
+
+.favouritecity {
+    background-color: transparent;
+    border: none;   
+    position: absolute;
+    top: 345px;
+    left: 255px;
+}
+
+.favouritecity:hover {
+    cursor: pointer;
+}
+
+.heart {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+}
+
+.heart:hover {
+    content: url("pictures/heartpink.png");
+}
+
+.infoDetails-information {
+    position: relative;
+    top: 110px;
+}
+
+.infoDetails-textstyle {
+    font-size: 24px;
+    font-family: Arial;
+}
+
+.cities {
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    font-size: 24px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    border: none;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.cities:hover {
+    cursor: pointer;
+    color: rgb(250, 168, 182);
+}
+
+.BigCities {
+    margin-bottom: 4px;
+}
+
+.close-button {
+    position: relative;
+    top: 27px;
+    left: 15px;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+}
+
+.close-button:hover {
+    cursor: pointer;
+    color: rgb(250, 168, 182);
+}
